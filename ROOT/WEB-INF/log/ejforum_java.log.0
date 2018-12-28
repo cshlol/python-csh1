@@ -1,0 +1,10 @@
+Dec 23, 2018 9:26:48 PM com.hongshee.ejforum.common.AppContext init
+INFO: EasyJForum context initialized: /data/web-data/jsp.com/ROOT/
+Dec 23, 2018 9:27:03 PM com.hongshee.ejforum.common.CacheManager loadGroups
+INFO: Succeeded to load groups to cache!
+Dec 23, 2018 9:27:03 PM com.hongshee.ejforum.common.CacheManager loadSections
+INFO: Succeeded to load sections to cache!
+Dec 23, 2018 9:32:13 PM com.hongshee.ejforum.data.TopicISO destroy
+INFO: Topic searcher finalized!
+Dec 23, 2018 9:32:13 PM com.hongshee.ejforum.common.AppContext destroy
+INFO: EasyJForum AppContext : destroyed.
