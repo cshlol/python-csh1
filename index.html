@@ -1,0 +1,26 @@
+
+$cateid = (int) S::getGP('cateid');
+$m = S::getGP('m');
+if ($db_channeldomain && $secdomain = array_search($pwServer['HTTP_HOST'], $db_channeldomain)) {
+        $m = 'area';
+//      $db_bbsurl = $_mainUrl;
+        $alias = $secdomain;
+        define('HTML_CHANNEL', 1);
+}
+selectMode($m);
+if (defined('M_P') && file_exists(M_P . 'index.php')) {
+        pwCache::getData(S::escapePath(D_P . 'data/bbscache/' . $db_mode . '_config.php'));
+        if (file_exists(M_P . 'require/core.php')) {
+                require_once (M_P . 'require/core.php');
+        }
+        $basename = "index.php?m=$m";
+        require_once (M_P . 'index.php');
+        exit();
+}
+
+pwCache::getData(D_P . 'data/bbscache/cache_index.php');
+pwCache::getData(D_P . 'data/bbscache/forum_cache.php');
+
+//notice
+$noticedb = array();
+"index.php" [noeol][dos] 298L, 11286C                                                                                       1,1      
